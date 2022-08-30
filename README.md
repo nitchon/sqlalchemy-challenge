@@ -1,2 +1,9 @@
 # sqlalchemy-challenge
 Module 10 Challenge
+
+# Description
+The challenge combines everything learned up to this point and begins to layer on top of it advanced data storage and retrieval using SQLAlchemy and the concept object-relational mapper (ORM). ORM has many advantages to raw SQL queries. With an ORM, the user can write one code to update and maintain. The code points to one reference. Another advantage of an ORM is its ability to adapt to the different vendor specific relational database management systems, reducing syntax errors. ORMs shield from SQL injection attacks, increasing the security of a framework. The code becomes more resilient and robust. But one major disadvantage is that an ORM can slow things down quite a bit, especially when working with a large framework that is perfomance sensitive.
+
+Using climate data from weather stations in Hawaii, the challenge walks through various climate analysis and exploration. In this repository, there are three Jupyter notebooks, one Python script and a Resources folder. In the Resources folder, two raw CSV data files and a SQLITE file that contains a weather table and a weather station table. Using Python and SQLAlchemy, the first part of the challenge involves climate analysis and exploration. The climate_starter notebook performs queries to complete precipitation and station analysis with Pandas and Matplotlib.
+
+The second part of the challenge introduces the Flask module. Using Flask, the app.py script designs a climate API based on the queries from the first part to return precipitation, station and temperature information. The user can also query the API with a date and/or date range to return the minimum, maximum and average temperature in that period. The challenge also includes two bonus temperature analyses for specific vacation dates to give the user an idea of what to expect when visting Hawaii.
